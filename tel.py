@@ -129,7 +129,7 @@ def main():
         print("✅ Test message sent.")
 
     job_queue = application.job_queue
-    job_queue.run_repeating(send_quiz, interval=60, first=10)  # Runs every 60 seconds, starting after 10 seconds
+    job_queue.run_repeating(send_quiz, interval=7200, first=10)  # Runs every 7200 seconds, starting after 10 seconds
 
     print("🚀 Job queue scheduled...")
     print("📡 Starting bot polling...")
